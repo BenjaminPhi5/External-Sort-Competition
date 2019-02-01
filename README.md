@@ -1,5 +1,7 @@
 # External-Sort-Competition
-This was my solution for a programming competition at the University of Cambridge Computer Laboratory, for which I came second! The challenge was to write code that sorted numerous sets of integers from different distributions in the fastest time, with a cap on the max heap size allowed and no nio packages to be used
+This was my solution for a programming competition at the University of Cambridge Computer Laboratory, which computer science students did over the summer between first and second year, and I came second! 
+
+The challenge was to write code that sorted numerous sets of integers from different distributions in the fastest time, with a cap on the max heap size allowed and no nio packages to be used. My solution sorted all the test files given in around 8 seconds. :)
 
 The task was to write an algorithm, that given a large set of integers, up to around 40MB, sort them in the fastest possible time.
 The task was in Java, and the max heap size was limited on the competition server (I'm not entirely sure what they limited it to, I think it was 10MB for the largest test files).
@@ -7,7 +9,7 @@ The task was in Java, and the max heap size was limited on the competition serve
 The code was to be run multiple times with different distributions of data, and the tiem given was the total time for sorting all the data sets.
 
 The program is given a file with the unsorted data in, and a handle to one other file which can be used as temporary space. No other files can be used, and no nio classes.
-The sorted values must then be stored back int he origional file.
+The sorted values must then be stored back int the origional file.
 
 It is called an external sort since the entire file in some cases does not fit in memeory.
 
@@ -20,5 +22,4 @@ All IO is done using byte buffers, and values are converted to integers manually
 My solution uses no merging techniques, and uses the spare file only if nessesary.
 I won't go into all the intricate details of what makes the sort fast in this external sortign context, but you can dive into the code yourself to work out what it does!
 
-My solution came secod in the competition, which computer science students did over the summer between first and second year,
-and sorted all the files given in around 8 seconds.
+![my leaderboard position](https://github.com/BenjaminPhi5/External-Sort-Competition/blob/master/Screenshot%202019-02-01%2011.20.13.png)
