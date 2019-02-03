@@ -21,5 +21,3 @@ All IO is done using byte buffers, and values are converted to integers manually
 
 My solution uses no merging techniques, and uses the spare file only if nessesary.
 I won't go into all the intricate details of what makes the sort fast in this external sortign context, but you can dive into the code yourself to work out what it does!
-
-![my leaderboard position](https://github.com/BenjaminPhi5/External-Sort-Competition/blob/master/Screenshot%202019-02-01%2011.20.13.png)
